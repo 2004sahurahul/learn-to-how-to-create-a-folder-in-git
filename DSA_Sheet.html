@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .questions {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-left: 5px solid #007bff;
+        }
+        .questions p {
+            margin: 0 0 10px;
+        }
+    </style>
+    <script>
+        function toggleQuestions(id) {
+            var questions = document.getElementById(id);
+            if (questions.style.display === "none") {
+                questions.style.display = "block";
+            } else {
+                questions.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>DSA Sheet</h1>
+    <div class="container">
+
+        <!-- 1D Arrays Section -->
+        <div class="section">
+            <h2 onclick="toggleQuestions('arrays1d')">1D Arrays</h2>
+            <div class="questions" id="arrays1d">
+                <p>Q1: Find the maximum subarray sum using Kadane's algorithm.</p>
+                <p>Q2: Rotate an array by 'k' positions.</p>
+                <p>Q3: Find the missing number in an array of n-1 integers in the range of 1 to n.</p>
+            </div>
+        </div>
+
+        <!-- 2D Arrays Section -->
+        <div class="section">
+            <h2 onclick="toggleQuestions('arrays2d')">2D Arrays</h2>
+            <div class="questions" id="arrays2d">
+                <p>Q1: Perform matrix multiplication of two 2D arrays.</p>
+                <p>Q2: Find the largest region in a binary matrix (connected 1s).</p>
+                <p>Q3: Rotate a matrix by 90 degrees.</p>
+            </div>
+        </div>
+
+        <!-- Strings Section -->
+        <div class="section">
+            <h2 onclick="toggleQuestions('strings')">Strings</h2>
+            <div class="questions" id="strings">
+                <p>Q1: Check if a string is a palindrome.</p>
+                <p>Q2: Find the longest common prefix of an array of strings.</p>
+                <p>Q3: Implement an algorithm to find all permutations of a string.</p>
+            </div>
+        </div>
+
+        <!-- Recursion Section -->
+        <div class="section">
+            <h2 onclick="toggleQuestions('recursion')">Recursion</h2>
+            <div class="questions" id="recursion">
+                <p>Q1: Solve the Tower of Hanoi problem.</p>
+                <p>Q2: Find all subsets of a set using recursion.</p>
+                <p>Q3: Calculate the nth Fibonacci number using recursion.</p>
+            </div>
+        </div>
+
+        <!-- Linked List Section -->
+        <div class="section">
+            <h2 onclick="toggleQuestions('linkedlist')">Linked List</h2>
+            <div class="questions" id="linkedlist">
+                <p>Q1: Reverse a singly linked list.</p>
+                <p>Q2: Detect and remove a cycle in a linked list.</p>
+                <p>Q3: Merge two sorted linked lists.</p>
+            </div>
+        </div>
+
+        <!-- Divide and Conquer Section -->
+        <div class="section">
+            <h2 onclick="toggleQuestions('divideconquer')">Divide and Conquer</h2>
+            <div class="questions" id="divideconquer">
+                <p>Q1: Implement merge sort.</p>
+                <p>Q2: Find the closest pair of points in a set of points.</p>
+                <p>Q3: Find the majority element in an array using divide and conquer.</p>
+            </div>
+        </div>
+
+        <!-- Backtracking Section -->
+        <div class="section">
+            <h2 onclick="toggleQuestions('backtracking')">Backtracking</h2>
+            <div class="questions" id="backtracking">
+                <p>Q1: Solve the N-Queens problem.</p>
+                <p>Q2: Find all possible combinations of a set that sum up to a target value.</p>
+                <p>Q3: Solve a Sudoku puzzle.</p>
+            </div>
+        </div>
+
+        <!-- Stacks Section -->
+        <div class="section">
+            <h2 onclick="toggleQuestions('stacks')">Stacks</h2>
+            <div class="questions" id="stacks">
+                <p>Q1: Implement a stack using arrays.</p>
+                <p>Q2: Evaluate a postfix expression using a stack.</p>
+                <p>Q3: Find the next greater element for each element in an array.</p>
+            </div>
+        </div>
+
+        <!-- Queues Section -->
+        <div class="section">
+            <h2 onclick="toggleQuestions('queues')">Queues</h2>
+            <div class="questions" id="queues">
+                <p>Q1: Implement a queue using two stacks.</p>
+                <p>Q2: Find the first non-repeating character in a stream of characters using a queue.</p>
+                <p>Q3: Implement a circular queue.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
